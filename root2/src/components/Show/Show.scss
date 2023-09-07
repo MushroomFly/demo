@@ -1,0 +1,49 @@
+.showTitleBox {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%);
+  width: 100%;
+  z-index: 3;
+
+  // 标题
+  .title {
+    font-family: "Microsoft YaHei";
+    font-size: 60px;
+    text-align: center;
+    background: -webkit-linear-gradient(left, rgb(255, 255, 255), rgb(255, 255, 255)) 0 0 no-repeat;
+    /*设置线性渐变*/
+    -webkit-background-size: 160px;
+    /*设置背景大小*/
+    -webkit-background-clip: text;
+    /*背景被裁剪到文字*/
+    -webkit-text-fill-color: rgba(232, 232, 232, 0.783);
+    /*设置文字的填充颜色*/
+    -webkit-animation: shine 3s infinite;
+  }
+
+  // 标题的灯光效果
+  @-webkit-keyframes shine {
+    /*创建动画*/
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+
+  // 打字机
+  .typewriter {
+    display: block;
+    width: fit-content;
+    border-right: 1px solid #ccc;
+    color: #ccc;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+    margin-top: 10px;
+  }
+}

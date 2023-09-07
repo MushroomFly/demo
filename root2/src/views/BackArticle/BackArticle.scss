@@ -1,0 +1,52 @@
+.screen {
+    border: 1px dashed skyblue;
+    text-align: center;
+    background-color: #fbfbfb;
+
+    .tag-box {
+        display: flex;
+        justify-content: center;
+
+        .tag {
+            width: 50px;
+            height: 20px;
+            font-size: 10px;
+            text-align: center;
+            line-height: 20px;
+            border: 1px solid;
+            border-radius: 20px;
+            margin-left: 10px;
+            color: #409eff;
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+
+.createArticle {
+    position: relative;
+    right: 0px;
+    width: 100px;
+    height: 30px;
+    float: right;
+}
+
+
+.upload {
+    display: flex;
+    flex-wrap: wrap;
+
+    .el-upload__tip {
+        margin-left: 20px;
+    }
+}
+
+.pagebox {
+    margin-top: 20px;
+
+    .page {
+        justify-content: center;
+    }
+}
